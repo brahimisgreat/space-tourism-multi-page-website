@@ -22,16 +22,33 @@ body {
 .header {
   position: absolute;
   padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
 }
 
 .header .navbar{
   background-color: black;
   width: 100vw;
   position: absolute;
+  margin-top: 20%;
 }
 
-.header .navbar ul li {
+.header .open{
+  background-color: rgb(235, 18, 18);
+  width: 100vw;
+  position: absolute;
+  margin-top: 20%;
+}
+
+.header nav ul li {
   margin: 40px ;
+}
+
+.menu{
+  color: #fff;
+  width: 54px;
+  height: 54px;
 }
 
 /* Home Page styless */

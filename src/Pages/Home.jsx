@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
 export const Home = () => {
+
+
+  const handleClick = () => {
+  }
   return (
     <>
       <section className="home flex items-center px-5">
@@ -19,7 +23,7 @@ export const Home = () => {
           </article>
 
           <article className="home-article2 mt-20">
-            <button className=" rounded-full w-36 h-36 bg-white text-gray-800 font-bold animate-pulse  " >
+            <button className=" rounded-full w-36 h-36 bg-white text-gray-800 font-bold animate-pulse  " onClick={handleClick} >
                 <Link to='/destination'>EXPLORE</Link>
             </button>
           </article>
