@@ -4,10 +4,10 @@ export const Home = () => {
   return (
     <>
       <section className="home flex items-center px-5">
-        <div className="overlay">
+        <div className="overlay flex  flex-col items-center">
 
           <article className="home-article1  " >
-            <h1 className="home-h1 text-xs text-gray-400 text-center tracking-widest mb-2 lg:text-left">
+            <h1 className="home-h1 text-xs  text-gray-400 text-center tracking-widest mb-2 lg:text-left">
               SO, YOU WANT TO TRAVEL TO <span className=" home-h1-span block mt-3 lg:text-left ">SPACE</span>
             </h1>
             <p className="  ">
