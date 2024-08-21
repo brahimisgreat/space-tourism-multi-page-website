@@ -1,8 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: #fff;
+  font-family: 'barlow', sans-serif;
+  font-size: 18px;
 }
 .header{
   position: absolute;
@@ -25,5 +31,19 @@
 @media (min-width: 768px){
   .home{
     background: url('./assets//home/background-home-desktop.jpg') no-repeat center center/cover;
+  }
+}
+
+@media (min-width: 1024px){
+  .home .overlay {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    text-align: left;
+   
+  }
+
+  .home .overlay article{
+    width:540px;
   }
 }
