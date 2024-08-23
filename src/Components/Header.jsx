@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/shared/logo.svg";
 import { IoMdMenu } from "react-icons/io";
+import { CiCircleRemove } from "react-icons/ci";
 
 export const Header = () => {
   const handleClick = () => {
     const navbar = document.querySelector(".navbar");
     navbar.classList.toggle("open");
+    console.log("clicked");
+    console.log(navbar);
   };
   return (
     <>
@@ -18,6 +21,9 @@ export const Header = () => {
 
         <nav className="navbar">
           <ul>
+            <button onClick={handleClick}>
+              <CiCircleRemove  className="x-button"/>
+            </button>
             <li>
               <Link to="/">
                 <span>00</span> HOME
@@ -40,9 +46,10 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
+        
         <div>
           <button onClick={handleClick}>
-            <IoMdMenu className="menu color"  />
+            <IoMdMenu className="menu color" />
           </button>
         </div>
       </header>

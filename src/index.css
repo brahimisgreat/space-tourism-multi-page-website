@@ -11,53 +11,97 @@
   font-size: 16px;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
 /* HEADER // NAVBAR STYLES */
 /* HEADER // NAVBAR STYLES */
 /* HEADER // NAVBAR STYLES */
 .header {
-  position: absolute;
   padding: 25px;
   display: flex;
   justify-content: space-between;
   width: 100vw;
 }
 
-.header .navbar{
-  background-color: black;
-  width: 100vw;
-  position: absolute;
-  margin-top: 20%;
+.header .navbar {
+  display: none;
 }
 
-.header .open{
-  background-color: rgb(235, 18, 18);
-  width: 100vw;
+.header .open {
+  width: 70vw;
+  display: block;
   position: absolute;
-  margin-top: 20%;
+  z-index: 1;
+  left: 30%;
+  height: 102vh;
+  background: rgba(11, 13, 23, 0.15);
+  backdrop-filter: blur(40px);
+  top: 0;
+}
+.header nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 60px;
+}
+
+.x-button {
+  color: #fff;
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  left: 80%;
+  top: 25px;
 }
 
 .header nav ul li {
-  margin: 40px ;
+  margin-left: 32px;
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-.menu{
+.menu {
   color: #fff;
   width: 54px;
   height: 54px;
 }
 
+@media (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+
+  .x-button {
+    display: none;
+    position: static;
+  }
+  .header .navbar {
+    display: flex;
+    position: relative;
+    left: 21%;
+    border: solid 1px #d0d6f9;
+    padding: 0px var(--spacing-800, 64px);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
+  }
+  .header .navbar ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 25px;
+  }
+
+  .header {
+    align-items: center;
+  }
+}
+
 /* Home Page styless */
 /* Home Page styless */
 /* Home Page styless */
+
 .home {
-  background: url("./assets//home/background-home-mobile.jpg") no-repeat center
-    center/cover;
-  height: calc(100vh);
   display: flex;
   justify-content: center;
 }
@@ -67,13 +111,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh + 1px);
+
   text-align: center;
   gap: 2rem;
 }
 
 .home-h1-span {
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   font-size: var(--font-size-mobile-text-preset-1, 80px);
   font-style: normal;
   font-weight: 400;
@@ -84,20 +128,18 @@ body {
   color: #d0d6f9;
   text-align: center;
   width: 327px;
-  font-family: Barlow;
   font-style: normal;
   font-weight: 400;
   line-height: 180%; /* 27px */
 }
 
-
 /* Home Page media Quieries Tablet */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .home {
     background: url("./assets//home/background-home-desktop.jpg") no-repeat
       center center/cover;
   }
-}
+} */
 
 /* Home Page media Quieries Desktop */
 @media (min-width: 1024px) {
