@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/shared/logo.svg";
 import { IoMdMenu } from "react-icons/io";
 import { CiCircleRemove } from "react-icons/ci";
@@ -14,9 +14,9 @@ export const Header = () => {
     <>
       <header className="header">
         <div className="logo-container">
-          <Link to="/">
+          
             <img src={logo} alt="logo" />
-          </Link>
+          
           <div className="nav-line"><hr/></div>
         </div>
 
@@ -26,24 +26,24 @@ export const Header = () => {
               <CiCircleRemove className="x-button" />
             </button>
             <li>
-              <Link to="/">
+              <NavLink  to="/">
                 <span>00</span> HOME
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/destination">
+              <NavLink to="/destination">
                 <span>01</span> DESTINATION
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/crew">
+              <NavLink to="/crew">
                 <span>02</span> CREW
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/technology">
+              <NavLink to="/technology">
                 <span>03</span> TECHNOLOGY
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
