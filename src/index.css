@@ -76,11 +76,31 @@
     display: none;
     position: static;
   }
+
+  .header .logo-container{
+    display: flex;
+    width: 672px;
+    position: absolute;
+    z-index: 1;
+  }
+  .header .nav-line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .nav-line hr{
+    width: 65%;
+    opacity: 0.25;
+background: var(--color-white, #FFF);
+    margin-right: 120px;
+  }
+
   .header .navbar {
     display: flex;
     position: relative;
-    left: 21%;
-    border: solid 1px #d0d6f9;
+    left: 35%;
     padding: 0px var(--spacing-800, 64px);
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(40px);

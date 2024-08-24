@@ -13,16 +13,17 @@ export const Header = () => {
   return (
     <>
       <header className="header">
-        <div>
+        <div className="logo-container">
           <Link to="/">
             <img src={logo} alt="logo" />
           </Link>
+          <div className="nav-line"><hr/></div>
         </div>
 
         <nav className="navbar">
           <ul>
             <button onClick={handleClick}>
-              <CiCircleRemove  className="x-button"/>
+              <CiCircleRemove className="x-button" />
             </button>
             <li>
               <Link to="/">
@@ -46,7 +47,7 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
-        
+
         <div>
           <button onClick={handleClick}>
             <IoMdMenu className="menu color" />
