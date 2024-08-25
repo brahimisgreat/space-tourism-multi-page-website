@@ -18,16 +18,16 @@ export const Mars = () => {
 
           <div className="explanations">
             <div className="planets-nav">
-              <NavLink to="/" className="planet">
+              <NavLink to="/destination" className="planet">
                 MOON
               </NavLink>
-              <NavLink to="/" className="planet">
+              <NavLink to="/mars" className="planet">
                 MARS
               </NavLink>
-              <NavLink to="/" className="planet">
+              <NavLink to="/europa" className="planet">
                 EUROPA
               </NavLink>
-              <NavLink to="/" className="planet">
+              <NavLink to="/titan" className="planet">
                 TITAN
               </NavLink>
             </div>

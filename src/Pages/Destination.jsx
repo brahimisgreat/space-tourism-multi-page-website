@@ -12,7 +12,7 @@ export const Destination = () => {
     <>
       <div className="destinations-overlay">
         <section className="Destinations">
-          <div>
+          <div className="yes">
             <h3>
               <span>01</span> PICK YOUR DESTINATION
             </h3>
@@ -21,16 +21,16 @@ export const Destination = () => {
 
           <div className="explanations">
             <div className="planets-nav">
-              <NavLink to="/" className="planet">
+              <NavLink to="/destination" className="planet">
                 MOON
               </NavLink>
               <NavLink to="/mars" className="planet">
                 MARS
               </NavLink>
-              <NavLink to="/" className="planet">
+              <NavLink to="/europa" className="planet">
                 EUROPA
               </NavLink>
-              <NavLink to="/" className="planet">
+              <NavLink to="/titan" className="planet">
                 TITAN
               </NavLink>
             </div>

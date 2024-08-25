@@ -127,7 +127,7 @@
     display: inline-block;
   }
 
-  .active {
+  .header .navbar ul li .active {
     border-bottom: 2px solid var(--color-blue-300, #d0d6f9);
   }
 
