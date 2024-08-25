@@ -6,6 +6,7 @@ import { Destination } from "./Pages/Destination";
 import { Technology } from "./Pages/Technology";
 import { Header } from "./Components/Header";
 import './App.css';
+import { Mars } from "./Pages/Mars";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/destination" element={<Destination />} />
             <Route path="/crew" element={<Crew />} />
             <Route path="/technology" element={<Technology />} />
+            <Route path="/mars" element={<Mars />} />
           </Routes>
         </BrowserRouter>
       </div>

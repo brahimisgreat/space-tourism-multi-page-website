@@ -1,22 +1,19 @@
-import planets from "../data.json";
-import moon from "../assets/destination/image-moon.webp";
-import { NavLink } from "react-router-dom";
-import "./Moon.css";
+import  planets  from '../data.json'
+import mars from '../assets/destination/image-mars.webp'
+import { NavLink } from 'react-router-dom'
 
-export const Destination = () => {
-  const planet = planets.destinations[0];
+export const Mars = () => {
 
-  console.log(planet);
-
+    const planet = planets.destinations[1];
   return (
     <>
-      <div className="destinations-overlay">
+     <div className="destinations-overlay">
         <section className="Destinations">
           <div>
             <h3>
               <span>01</span> PICK YOUR DESTINATION
             </h3>
-            <img src={moon} alt="moon" />
+            <img src={mars} alt="moon" />
           </div>
 
           <div className="explanations">
@@ -24,7 +21,7 @@ export const Destination = () => {
               <NavLink to="/" className="planet">
                 MOON
               </NavLink>
-              <NavLink to="/mars" className="planet">
+              <NavLink to="/" className="planet">
                 MARS
               </NavLink>
               <NavLink to="/" className="planet">
@@ -60,5 +57,5 @@ export const Destination = () => {
         </section>
       </div>
     </>
-  );
-};
+)
+}

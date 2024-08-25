@@ -1,8 +1,8 @@
-.destinations-overlay{
-    width: 100vw;
-    height: 115vh;
-    background: url('../assets//destination/background-destination-mobile.jpg') no-repeat center center/cover;
-    
+.destinations-overlay {
+  width: 100vw;
+  height: 115vh;
+  background: url("../assets//destination/background-destination-mobile.jpg")
+    no-repeat center center/cover;
 }
 
 .Destinations {
@@ -44,9 +44,10 @@
 
 .Destinations .explanations {
   width: 327px;
-    display: flex;
-    flex-direction: column;
-gap: 24px;}
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
 .Destinations .explanations .planets-nav {
   display: flex;
@@ -125,18 +126,49 @@ gap: 24px;}
 }
 
 @media (min-width: 1000px) {
-  .destinations-overlay{
+  .destinations-overlay {
     width: 100vw;
     height: 115vh;
-    background: url('../assets//destination/background-destination-desktop.jpg') no-repeat center center/cover;
+    background: url("../assets//destination/background-destination-desktop.jpg")
+      no-repeat center center/cover;
   }
 
-  .Destinations{
+  .Destinations {
     display: flex;
     flex-direction: row;
     top: 200px;
     gap: 44px;
     border: solid 1px red;
   }
-    
+
+  .explanations {
+    border: solid 1px blue;
+  }
+  .Destinations div img {
+    width: 480px;
+    height: 480px;
+    border: solid 1px green;
+  }
+
+  .Destinations .explanations h1 {
+    text-align: left;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .Destinations .explanations p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px; /* 32.4px */
+  }
+
+    .Destinations .explanations .travel-time {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 44px;
+    }
 }
