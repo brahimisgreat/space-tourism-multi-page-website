@@ -81,32 +81,39 @@
 
   .header .logo-container {
     display: flex;
-    width: 672px;
+    width: 900px;
     position: absolute;
     z-index: 1;
+    left: 50px;
   }
   .header .nav-line {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
   }
 
   .header .nav-line hr {
-    width: 65%;
+    width: 92%;
     opacity: 0.25;
     background: var(--color-white, #fff);
-    margin-right: 120px;
+    z-index: 1;
+    position: relative;
+    left: 50px;
   }
 
   .header .navbar {
     display: flex;
     position: relative;
-    left: 35%;
+    left: 53%;
     padding: 0px var(--spacing-800, 64px);
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(40px);
     max-height: 86px;
+    min-width: 900px;
+    max-width: 900px;
   }
   .header .navbar ul {
     display: flex;
