@@ -20,7 +20,7 @@ const [index, setIndex] = useState(0);
   return (
     <>
       <div className="crew-overlay">
-        <div>
+        <div className="crew-container">
           <article className="box-1">
             <h4>
               <span>02</span> MEET YOUR CREW

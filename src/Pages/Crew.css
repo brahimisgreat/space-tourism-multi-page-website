@@ -1,5 +1,6 @@
-.crew-container section button{
-    background-color: red;
-    width: 30px;
-    height: 30px;
+.crew-overlay{
+    border: solid 1px red;
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets//crew/background-crew-mobile.jpg") no-repeat center center/cover;
 }
