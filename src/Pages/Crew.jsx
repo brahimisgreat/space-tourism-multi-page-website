@@ -28,7 +28,7 @@ const [index, setIndex] = useState(0);
           </article>
 
           <section className="box-2">
-            <h3>{crew[index].role}</h3>
+            <h4>{crew[index].role}</h4>
             <h3>{crew[index].name}</h3>
             <p>{crew[index].bio}</p>
           </section>

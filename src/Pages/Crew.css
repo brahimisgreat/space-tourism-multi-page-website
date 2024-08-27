@@ -1,6 +1,49 @@
-.crew-overlay{
-    border: solid 1px red;
-    width: 100vw;
-    height: 100vh;
-    background: url("../assets//crew/background-crew-mobile.jpg") no-repeat center center/cover;
+.crew-overlay {
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets//crew/background-crew-mobile.jpg") no-repeat center
+    center/cover;
+}
+
+.crew-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.crew-container .box-1 {
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+
+.crew-container .box-2 h4 {
+  color: var(--color-white, #fff);
+  text-align: center;
+  font-family: Bellefair;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.crew-container .box-2 h3 {
+  color: var(--color-white, #fff);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* mobile/text-preset-3 */
+  font-family: Bellefair;
+  font-size: var(--font-size-mobile-text-preset-3, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
