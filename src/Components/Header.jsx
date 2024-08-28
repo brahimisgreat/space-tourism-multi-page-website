@@ -2,6 +2,8 @@ import {  NavLink } from "react-router-dom";
 import logo from "../assets/shared/logo.svg";
 import { IoMdMenu } from "react-icons/io";
 import { CiCircleRemove } from "react-icons/ci";
+import './Header.css';
+import {x} from '../assets/home/Group (1).svg';
 
 export const Header = () => {
   const handleClick = () => {

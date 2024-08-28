@@ -1,7 +1,6 @@
 import planets from "../data.json";
 import moon from "../assets/destination/image-moon.webp";
 import { NavLink } from "react-router-dom";
-import "./Moon.css";
 
 export const Destination = () => {
   const planet = planets.destinations[0];
