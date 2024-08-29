@@ -3,7 +3,6 @@ import logo from "../assets/shared/logo.svg";
 import { IoMdMenu } from "react-icons/io";
 import { CiCircleRemove } from "react-icons/ci";
 import './Header.css';
-import {x} from '../assets/home/Group (1).svg';
 
 export const Header = () => {
   const handleClick = () => {
@@ -17,7 +16,7 @@ export const Header = () => {
       <header className="header">
         <div className="logo-container">
           
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="logo" />
           
           <div className="nav-line"><hr/></div>
         </div>
@@ -50,9 +49,9 @@ export const Header = () => {
           </ul>
         </nav>
 
-        <div>
+        <div className="menu-container">
           <button onClick={handleClick}>
-            <IoMdMenu className="menu color" />
+            <IoMdMenu className="menu" />
           </button>
         </div>
       </header>

@@ -1,6 +1,5 @@
 .header {
-  margin-top: 10px;
-  border: solid 1px red;
+  margin-top: 0.625rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -17,20 +16,19 @@
   position: absolute;
   right: 0;
   width: 75%;
-  padding-left: 32px;
+  padding-left: 2rem;
   background: rgba(11, 13, 23, 0.15);
   backdrop-filter: blur(40px);
   height: 94.7rem;
 }
 
 .header .open ul {
-  border: solid 1px red;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-  top: 800px;
+  top: 45.625rem;
   list-style: none;
 }
 
@@ -43,13 +41,46 @@
 
 .header .open ul button {
   background-color: transparent;
-border: none;
-align-self: flex-end;
+  border: none;
+  align-self: flex-end;
 }
 
 .header .open ul button .x-button {
   background-color: transparent;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   color: white;
 }
+
+.header .open ul li a {
+  color: var(--color-white, #fff);
+  font-family: "Barlow Condensed";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.125rem;
+}
+
+.header .open ul li span {
+  color: white;
+  font-family: "Barlow Condensed";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.16875rem;
+}
+
+.header .menu-container button {
+ background-color: transparent;
+  border: none;
+}
+
+.header .menu-container button .menu {
+  color: white;
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-left:10rem ;
+}
+
