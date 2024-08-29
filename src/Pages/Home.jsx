@@ -24,7 +24,7 @@ export const Home = () => {
           </article>
 
           <article className="home-article2">
-            <button className="home-button " onClick={handleClick} >
+            <button className="home-button animate-pulse" onClick={handleClick} >
                 <Link to='/destination'>EXPLORE</Link>
             </button>
           </article>

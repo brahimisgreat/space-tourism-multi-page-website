@@ -48,14 +48,13 @@
   border-radius: 999px;
   background: white;
   color: #0b0d17;
-  font-feature-settings: "liga" off, "clig" off;
-  /* mobile/text-preset-4 */
   font-family: Bellefair;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   border: none;
+  
 }
 
 .home-container .home-article2 .home-button a {

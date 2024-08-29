@@ -10,6 +10,9 @@
   display: none;
 }
 
+.header .logo-container .nav-line {
+  display: none;
+}
 .header .open {
   display: block;
   background-color: white;
