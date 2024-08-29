@@ -26,7 +26,7 @@ export const Home = () => {
           <article className="home-article2">
             <button className="home-button " onClick={handleClick} >
                 <Link to='/destination'>EXPLORE</Link>
-            </button>00
+            </button>
           </article>
 
         </div>

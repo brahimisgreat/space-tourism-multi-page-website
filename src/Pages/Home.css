@@ -1,10 +1,12 @@
 .home-container {
-  border: solid 1px red;
+  max-width: 327px;
+  margin: 0 auto;
+  max-height: 676px;
+  margin-top: 60px;
 }
 
 .home-container .home-article1 .home-h1 {
   display: flex;
-  border: solid 1px blue;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
@@ -21,14 +23,42 @@
   font-family: Bellefair;
   font-size: 5rem;
   color: white;
+  padding: 10px 0 10px 0;
 }
 
 .home-container .home-article1 .home-p {
-  color:  #d0d6f9;
+  color: #d0d6f9;
   text-align: center;
   font-family: Barlow;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 180%;
+}
+
+.home-container .home-article2 {
+  max-width: 540px;
+  text-align: center;
+  padding: 100px;
+}
+
+.home-container .home-article2 .home-button {
+  width: 144px;
+  height: 144px;
+  border-radius: 999px;
+  background: white;
+  color: #0b0d17;
+  font-feature-settings: "liga" off, "clig" off;
+  /* mobile/text-preset-4 */
+  font-family: Bellefair;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
+
+.home-container .home-article2 .home-button a {
+    color: #0b0d17;
+    text-decoration: none;
 }
