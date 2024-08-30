@@ -61,3 +61,42 @@
     color: #0b0d17;
     text-decoration: none;
 }
+
+
+/* Tablets */
+@media (min-width: 768px) {
+
+  .home{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-container{
+    margin-right: 40%;
+  }
+
+  .home-container .home-article1{
+    width: fit-content;
+
+  }
+  .home-container .home-article1 .home-h1{
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
+
+  .home-container .home-article1 .home-h1 .home-h1-span{
+    font-size: 144px;
+  }
+
+  .home-container .home-article1 .home-p{
+    font-size: 16px;
+    width: 512px;
+  }
+
+  .home-container .home-article2 .home-button{
+    width: 272px;
+height: 272px;
+font-size: 32px;
+  }
+}

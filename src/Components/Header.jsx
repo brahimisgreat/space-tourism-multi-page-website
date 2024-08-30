@@ -27,22 +27,22 @@ export const Header = () => {
               <CiCircleRemove className="x-button" />
             </button>
             <li>
-              <NavLink onClick={handleClick} to="/">
-                <span>00</span> HOME
+              <NavLink  to="/">
+                <span></span> HOME
               </NavLink>
             </li>
             <li>
-              <NavLink onClick={handleClick} to="/destination">
+              <NavLink  to="/destination">
                 <span>01</span> DESTINATION
               </NavLink>
             </li>
             <li>
-              <NavLink onClick={handleClick} to="/crew">
+              <NavLink to="/crew">
                 <span>02</span> CREW
               </NavLink>
             </li>
             <li>
-              <NavLink onClick={handleClick} to="/technology">
+              <NavLink  to="/technology">
                 <span>03</span> TECHNOLOGY
               </NavLink>
             </li>

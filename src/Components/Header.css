@@ -19,10 +19,11 @@
   position: absolute;
   right: 0;
   width: 75%;
-  padding-left: 2rem;
+  padding-left: 1.0rem;
   background: rgba(11, 13, 23, 0.15);
   backdrop-filter: blur(40px);
   height: 94.7rem;
+  z-index: 100;
 }
 
 .header .open ul {
@@ -33,6 +34,14 @@
   gap: 2rem;
   top: 45.625rem;
   list-style: none;
+}
+
+
+
+.header .open ul li .active{
+width: 100rem;
+border-right: solid 0.5rem #ffff;
+padding-right: 10px;
 }
 
 .header .open ul li a {
@@ -76,7 +85,7 @@
 }
 
 .header .menu-container button {
- background-color: transparent;
+  background-color: transparent;
   border: none;
 }
 
@@ -84,6 +93,55 @@
   color: white;
   width: 3.125rem;
   height: 3.125rem;
-  margin-left:10rem ;
+  margin-left: 10rem;
 }
 
+/* TABLET */
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    bottom: 8px;
+
+  }
+
+  .header .navbar {
+    display: block;
+    position: relative;
+    left: 5.6rem;
+    max-height: 100px;
+    
+  }
+
+  .header .menu-container button .menu {
+    display: none;
+  }
+
+  .x-button {
+    display: none;
+  }
+
+  .header .navbar ul {
+    display: flex;
+    gap: 60px;
+    min-width: 488px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
+  }
+
+   .active{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.27rem;
+    border-bottom: 3px solid #ffff;
+  }
+
+  
+
+  li{
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+}
