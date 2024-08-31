@@ -3,7 +3,7 @@ import moon from "../assets/destination/image-moon.png";
 import mars from "../assets/destination/image-mars.png";
 import europa from "../assets/destination/image-europa.png";
 import titan from "../assets/destination/image-titan.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Destination.css";
 import { useState } from "react";
 
@@ -12,6 +12,10 @@ export const Destination = () => {
   const [PlanetIndex, setPlanetIndex] = useState(0);
 
   const planetImages = [moon, mars, europa, titan];
+
+  function handleClick(index) {
+    setPlanetIndex(index)
+  }
 
   return (
     <>
@@ -26,19 +30,19 @@ export const Destination = () => {
           </div>
 
           <div>
-            <img className="w-56 md:w-96" src={planetImages[PlanetIndex]} alt="moon" />
+            <img className="img w-56" src={planetImages[PlanetIndex]} alt="moon" />
           </div>
         </header>
 
         <section className="explanation">
           <nav>
-            <button onClick={() => setPlanetIndex(0)}>MOON</button>
-            <button onClick={() => setPlanetIndex(1)}>MARS</button>
-            <button onClick={() => setPlanetIndex(2)}>EUROPA</button>
-            <button onClick={() => setPlanetIndex(3)}>TITAN</button>
+            <button className={PlanetIndex === 0 ? 'active': ''} onClick={()=> handleClick(0)} >MOON</button>
+            <button className={PlanetIndex === 1 ? 'active': ''} onClick={()=> handleClick(1)}>MARS</button>
+            <button className={PlanetIndex === 2 ? 'active': ''} onClick={()=> handleClick(2)}>EUROPA</button>
+            <button className={PlanetIndex === 3 ? 'active': ''} onClick={()=> handleClick(3)}>TITAN</button>
           </nav>
 
-          <div className="planetName-container">
+          <div className="planetName-container border-solid">
             <h2>{planets[PlanetIndex].name}</h2>
           </div>
 
