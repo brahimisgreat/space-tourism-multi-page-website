@@ -14,16 +14,16 @@ export const Destination = () => {
     <>
       <section className="destination">
         <header>
-          <span></span>
+          <span>0{ PlanetIndex + 1}</span>
           <h4>PICK YOUR DESTINATION</h4>
         </header>
 
         <div>
-          <img src={moon} alt="moon" />
+          <img className='w-56 ' src={moon} alt="moon" />
         </div>
 
         <section className="explanation">
-          <nav>
+          <nav >
             <button onClick={() => setPlanetIndex(0)}>MOON</button>
             <button onClick={() => setPlanetIndex(1)}>MARS</button>
             <button onClick={() => setPlanetIndex(2)}>EUROPA</button>
@@ -31,7 +31,7 @@ export const Destination = () => {
           </nav>
 
           <div className="planetName-container">
-            <h2></h2>
+            <h2>{planets[PlanetIndex].name}</h2>
           </div>
 
           <div className="planet-description-container">
@@ -41,12 +41,12 @@ export const Destination = () => {
           <div className="planetsStats-container">
             <div className="distance">
               <span></span>
-              <p></p>
+              <p>{planets[PlanetIndex].description}</p>
             </div>
 
             <div className="travelTime">
-              <span></span>
-              <p></p>
+              <span>{planets[PlanetIndex].distance}</span>
+              <p>{planets[PlanetIndex].travel}</p>
             </div>
           </div>
         </section>
