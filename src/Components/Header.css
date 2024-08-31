@@ -6,6 +6,10 @@
   position: relative;
 }
 
+hr{
+  display: none;
+}
+
 .header .navbar {
   display: none;
 }
@@ -97,11 +101,15 @@ padding-right: 10px;
 }
 
 /* TABLET */
-@media (min-width: 768px) {
+@media (min-width: 768px)  {
   .header {
     display: flex;
     bottom: 8px;
 
+  }
+
+  .logo-container{
+    margin-left: 20px;
   }
 
   .header .navbar {
@@ -109,6 +117,7 @@ padding-right: 10px;
     position: relative;
     left: 5.6rem;
     max-height: 100px;
+    width: 80%;
     
   }
 
@@ -145,3 +154,46 @@ padding-right: 10px;
     align-items: center;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    bottom: 8px;
+   
+  }
+  hr{
+    display: block;
+    position: absolute;
+    width: 400px;
+    left: 12rem;
+    border: 0.5px solid #ffff;
+    z-index: 100;
+    opacity: 0.25;
+  }
+
+  .header .navbar {
+    width: 60%;
+    left: 15rem;
+  }
+
+  .header .navbar ul{
+    justify-content: space-evenly;
+  }
+
+  .header .menu-container button .menu {
+    display: none;
+  }
+
+   
+  
+
+  
+
+  
+
+ 
+}
+
+

@@ -20,6 +20,7 @@ export const Header = () => {
           
           <div className="nav-line"><hr/></div>
         </div>
+        <hr/>
 
         <nav className="navbar">
           <ul>

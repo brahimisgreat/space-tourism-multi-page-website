@@ -100,3 +100,29 @@ height: 272px;
 font-size: 32px;
   }
 }
+
+/* Desktops */
+
+@media(min-width:1024px){
+  .home-container{
+    flex-direction: row;
+    display: flex;
+    margin-right: 800px;
+    margin-top: 200px;
+    gap: 100px;
+  }
+
+  .home-container .home-article1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-container .home-article1 .home-h1{
+    text-align: left;
+  }
+
+  .home-container .home-article1 .home-p{
+    text-align: left;
+  }
+}
