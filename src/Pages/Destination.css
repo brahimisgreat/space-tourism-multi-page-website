@@ -113,5 +113,70 @@
     flex-direction: column;
     gap: 1.5rem;
     padding: 1.2rem;
+}
+
+@media(min-width: 768px){
+    .bg{
+        background: url('../assets/destination/background-destination-tablet.jpg') no-repeat center center/cover;
+        width: 100vw;
+        height: 110vh;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+/* //////////////// */
+    .destination {
+        max-width: 688px;
+        margin-top: 80px;
+        gap: 4rem;
+        border: solid 1px var(--color-blue-300, #d0d6f9);
+    }
+/* ////////////////// */
+    .destination header {
+        gap: 4rem;
+        border: solid 1px var(--color-blue-300, #d0d6f9);
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+    .destination header .des-title{
+        border: solid 1px var(--color-blue-300, #d0d6f9);
+        width: 100%;
+
+      }
+      .destination header span{
+        font-size: 20px;
+      }
+
+      .destination header h4{
+        gap: 2rem;
+        font-size: 24px;
+      }
+      /* ///////////////////// */
+      .destination .explanation {
+          max-width: 514px;
+          gap: 2rem;
+          margin-bottom: 10px;
+      }
+
+      .destination .explanation nav{
+        width: 400px;
+        margin: 0 auto;
+      }
+
+      .destination .explanation .planetName-container h2{
+        font-size: 80px;
+      }
+
+      .destination .explanation .planet-description-container p{
+      font-size: 18px;
+      }
+
+      .destination .explanation .planetsStats-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+
 
 }

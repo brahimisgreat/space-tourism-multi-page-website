@@ -20,13 +20,13 @@ export const Destination = () => {
 
       <section className="destination">
         <header>
-          <div>
+          <div className="des-title">
             <span>0{PlanetIndex + 1}</span>
             <h4>PICK YOUR DESTINATION</h4>
           </div>
 
           <div>
-            <img className="w-56 " src={planetImages[PlanetIndex]} alt="moon" />
+            <img className="w-56 md:w-96" src={planetImages[PlanetIndex]} alt="moon" />
           </div>
         </header>
 
