@@ -1,6 +1,102 @@
-.destination{
-    border: solid 1px red;
+.bg{
+    background: url('../assets/destination/background-destination-mobile.jpg') no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: ;
+}
+
+.destination {
+  border: solid 1px red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 327px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.destination header {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+.destination header div{
     display: flex;
-flex-direction: column;
-align-items: center;
+    gap: 1rem;
+}
+
+.destination header span {
+  font-family: "Barlow Condensed";
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  opacity: 0.25;
+}
+
+.destination header h4 {
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Barlow Condensed";
+  line-height: normal;
+  letter-spacing: 2.4px;
+  
+}
+
+.destination .explanation nav {
+  display: flex;
+  gap: 1rem;
+  flex-grow: 1;
+}
+.destination .explanation button {
+  flex: 1;
+}
+
+.destination .explanation .planetName-container h2 {
+  text-align: center;
+  font-family: Bellefair;
+  font-size: 56px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.destination .explanation .planet-description-container p {
+  color: var(--color-blue-300, #d0d6f9);
+  text-align: center;
+  font-family: Barlow;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 180%;
+}
+
+.destination .explanation .planetsStats-container {
+  border-top: 1px solid var(--color-blue-300, #d0d6f9);
+}
+
+.distance,
+.travelTime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination .explanation .planetsStats-container .distance span,
+.destination .explanation .travelTime span {
+  color: var(--color-blue-300, #d0d6f9);
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.destination .explanation .planetsStats-container .distance p,
+.destination .explanation .travelTime p {
+  color: var(--color-white, #fff);
+  text-align: center;
+  font-family: Bellefair;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
