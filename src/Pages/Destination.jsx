@@ -16,6 +16,7 @@ export const Destination = () => {
   return (
     <>
     <div className="bg">
+    </div>
 
       <section className="destination">
         <header>
@@ -58,7 +59,7 @@ export const Destination = () => {
           </div>
         </section>
       </section>
-    </div>
+    
     </>
   );
 };

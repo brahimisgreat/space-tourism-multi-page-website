@@ -11,6 +11,7 @@ import { Europa } from "./Pages/Europa";
 import { Titan } from "./Pages/Titan";
 
 function App() {
+
   return (
     <>
       <div className="app">
