@@ -2,7 +2,7 @@
   background: url("../assets/crew/background-crew-mobile.jpg") no-repeat center
     center/cover;
   width: 100vw;
-  height: 115vh;
+  height: 105vh;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -56,6 +56,8 @@ margin-top: 3rem;}
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
+  opacity: 0.5;
+
 }
 
 .crew .crew-title .role h3 {
@@ -92,6 +94,6 @@ margin-top: 3rem;}
 }
 
  .img  {
-  width: 251.27px;
+ max-width: 251.27px;
   height: 320px;
 }

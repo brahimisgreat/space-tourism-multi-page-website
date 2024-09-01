@@ -30,7 +30,7 @@ export const Destination = () => {
           </div>
 
           <div>
-            <img className="img w-56" src={planetImages[PlanetIndex]} alt="moon" />
+            <img className="img w-56 h-56" src={planetImages[PlanetIndex]} alt="moon" />
           </div>
         </header>
 
