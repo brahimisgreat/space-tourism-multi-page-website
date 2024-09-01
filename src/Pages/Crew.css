@@ -2,7 +2,7 @@
   background: url("../assets/crew/background-crew-mobile.jpg") no-repeat center
     center/cover;
   width: 100vw;
-  height: 105vh;
+  height: 115vh;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -11,13 +11,18 @@
 .crew {
   max-width: 327px;
   margin: 0 auto;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding-top: 3rem;
 }
 
 .crew .crew-title .crew-section {
   display: flex;
-  border: solid 1px white;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
+
 }
 
 .crew .crew-title .crew-section span {
@@ -30,10 +35,63 @@
 }
 
 .crew .crew-title .crew-section h4 {
-
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 2.4px;
+}
+
+.crew .crew-title .role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 20px;
+margin-top: 3rem;}
+
+.crew .crew-title .role span {
+  font-family: Bellefair;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.crew .crew-title .role h3 {
+  font-family: Bellefair;
+  font-size: 24px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.crew .crew-title .bio {
+  color: var(--color-blue-300, #d0d6f9);
+  font-family: Barlow;
+  font-size: 15px;
+  line-height: 180%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.crew .crew-title nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.crew .crew-title nav button {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  opacity: 0.25;
+  border-radius: 50%;
+}
+.crew .crew-title nav .active{
+  opacity: 1;
+}
+
+ .img  {
+  width: 251.27px;
+  height: 320px;
 }

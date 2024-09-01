@@ -17,30 +17,30 @@ export const Crew = () => {
     <>
       <div className="crew-bg"></div>
       <article className="crew">
-        <div className="crew-title">
+        <div className="crew-title ">
           <section className="crew-section">
             <span>02</span>
             <h4>MEET YOUR CREW</h4>
           </section>
 
-          <section>
+          <section className="role">
             <span>{crew[index].role}</span>
             <h3>{crew[index].name}</h3>
           </section>
 
-          <section>
+          <section className="bio">
             <p>{crew[index].bio}</p>
           </section>
 
           <nav>
-            <button onClick={() => setIndex(0)}></button>
-            <button onClick={() => setIndex(1)}></button>
-            <button onClick={() => setIndex(2)}></button>
-            <button onClick={() => setIndex(3)}></button>
+            <button onClick={() => setIndex(0)} className={index === 0 ? 'active' : ''}></button>
+            <button onClick={() => setIndex(1)} className={index === 1 ? 'active' : ''} ></button>
+            <button onClick={() => setIndex(2)} className={index === 2 ? 'active' : ''} ></button>
+            <button onClick={() => setIndex(3)} className={index === 3 ? 'active' : ''} ></button>
           </nav>
         </div>
 
-        <div>
+        <div className="img">
           <img src={crewImages[index]} alt="image of crew member" />
         </div>
       </article>
