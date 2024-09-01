@@ -10,40 +10,40 @@ export const Crew = () => {
   const [index, setIndex] = useState(0);
   const { crew } = data;
 
-
-
   const crewImages = [douglas, mark, victor, anousheh];
 
   console.log(crew);
   return (
     <>
-      <div className="crew-overlay">
-        <div className="crew-container">
-          <article className="box-1">
-            <h4>
-              <span>02</span> MEET YOUR CREW
-            </h4>
-          </article>
+      <div className="crew-bg"></div>
+      <article className="crew">
+        <div className="crew-title">
+          <section className="crew-section">
+            <span>02</span>
+            <h4>MEET YOUR CREW</h4>
+          </section>
 
-          <section className="box-2 flex flex-col gap-2">
-            <h4>{crew[index].role}</h4>
+          <section>
+            <span>{crew[index].role}</span>
             <h3>{crew[index].name}</h3>
+          </section>
+
+          <section>
             <p>{crew[index].bio}</p>
           </section>
 
-          <section className="box-3">
-            <div className="button-container">
-              <button style={index == 0 ? {backgroundColor: 'white'}: {backgroundColor:'#484848'}}  onClick={() => setIndex(0)}></button>
-              <button style={index == 1 ? {backgroundColor: 'white'}: {backgroundColor:'#484848'}} onClick={() => setIndex(1)}></button>
-              <button style={index == 2 ? {backgroundColor: 'white'}: {backgroundColor:'#484848'}} onClick={() => setIndex(2)}></button>
-              <button style={index == 3 ? {backgroundColor: 'white'}: {backgroundColor:'#484848'}} onClick={() => setIndex(3)}></button>
-            </div>
-            <div className="img-container">
-              <img src={crewImages[index]} />
-            </div>
-          </section>
+          <nav>
+            <button onClick={() => setIndex(0)}></button>
+            <button onClick={() => setIndex(1)}></button>
+            <button onClick={() => setIndex(2)}></button>
+            <button onClick={() => setIndex(3)}></button>
+          </nav>
         </div>
-      </div>
+
+        <div>
+          <img src={crewImages[index]} alt="image of crew member" />
+        </div>
+      </article>
     </>
   );
 };

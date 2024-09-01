@@ -189,3 +189,35 @@
     gap: 7rem;
   }
 }
+
+@media(min-width: 1024px) {
+  .bg{
+    background: url('../assets//destination/background-destination-desktop.jpg') no-repeat center center/cover;
+    width: 100vw;
+  }
+
+  .destination{
+    flex-direction: row;
+    min-width: 1000px;
+  }
+
+  .destination .explanation{
+    max-width: 445px;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .destination .explanation nav{
+    margin-left: 0;
+  }
+
+  .destination .explanation .planet-description-container p{
+    text-align: left;
+  }
+
+  .destination .explanation .planetsStats-container .distance,
+  .destination .explanation .travelTime{
+      gap: 1rem;    
+  }
+
+}

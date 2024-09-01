@@ -1,0 +1,39 @@
+.crew-bg {
+  background: url("../assets/crew/background-crew-mobile.jpg") no-repeat center
+    center/cover;
+  width: 100vw;
+  height: 105vh;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.crew {
+  max-width: 327px;
+  margin: 0 auto;
+}
+
+.crew .crew-title .crew-section {
+  display: flex;
+  border: solid 1px white;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.crew .crew-title .crew-section span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  opacity: 0.25;
+}
+
+.crew .crew-title .crew-section h4 {
+
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
