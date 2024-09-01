@@ -41,7 +41,7 @@ export const Crew = () => {
         </div>
 
         <div className="img">
-          <img src={crewImages[index]} alt="image of crew member" />
+          <img  src={crewImages[index]} alt="image of crew member" />
         </div>
       </article>
     </>

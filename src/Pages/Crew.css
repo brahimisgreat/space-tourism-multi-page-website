@@ -12,17 +12,16 @@
   max-width: 327px;
   margin: 0 auto;
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-    padding-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding-top: 3rem;
 }
 
 .crew .crew-title .crew-section {
   display: flex;
   gap: 1.5rem;
   justify-content: center;
-
 }
 
 .crew .crew-title .crew-section span {
@@ -48,7 +47,8 @@
   align-items: center;
   gap: 0.5rem;
   padding-bottom: 20px;
-margin-top: 3rem;}
+  margin-top: 3rem;
+}
 
 .crew .crew-title .role span {
   font-family: Bellefair;
@@ -57,7 +57,6 @@ margin-top: 3rem;}
   line-height: normal;
   text-transform: uppercase;
   opacity: 0.5;
-
 }
 
 .crew .crew-title .role h3 {
@@ -89,11 +88,84 @@ margin-top: 3rem;}
   opacity: 0.25;
   border-radius: 50%;
 }
-.crew .crew-title nav .active{
+.crew .crew-title nav .active {
   opacity: 1;
 }
 
- .img  {
- max-width: 251.27px;
+.img {
+  max-width: 251.27px;
   height: 320px;
+}
+
+@media (min-width: 768px) {
+  .crew {
+    max-width: 1200px;
+    margin-top: 100px;
+  }
+  .crew .crew-title{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+  }
+
+  .crew .crew-title .crew-section {
+    position: relative;
+    right: 300px;
+    bottom: 110px;
+  }
+
+  .crew .crew-title .crew-section span {
+    font-size: 24px;
+  }
+
+  .crew .crew-title .crew-section h4 {
+    font-size: 24px;
+  }
+
+  .crew .crew-title .role span {
+    font-size: 24px;
+  }
+
+  .crew .crew-title .role h3 {
+    font-size: 42px;
+  }
+
+  .crew .crew-title .bio {
+    font-size: 20px;
+  }
+
+  .img {
+    width: 500px;
+  }
+
+  .img img {
+    width: 515.304px;
+    height: 598.965px;
+    position: absolute;
+    right: 200px;
+    top: 830px;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+  .crew{
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .img{
+    max-width: 800px;
+    max-height: 800px;
+    margin-bottom: 100px;
+
+  }
+
+  .img img{
+    position: static;
+    max-width: 800px;
+    max-height: 600px;
+    margin-bottom: 200px;
+  }
 }
