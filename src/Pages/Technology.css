@@ -1,0 +1,116 @@
+.technology-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets//technology/background-technology-mobile.jpg")
+    no-repeat center center/cover;
+  z-index: -4;  
+}
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.tech-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.tech-header span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  opacity: 0.25;
+}
+
+.tech-header h3 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+
+
+
+.tech-img {
+  width: 400vw;
+  height: 250px;
+}
+
+.tech-nav {
+  display: flex;
+  max-width: 514px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tech-nav button {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: transparent;
+  color: white;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Bellefair;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: solid 1px white;
+  position: relative;
+  z-index: -1;
+}
+
+.tech-nav button.active {
+    background: white;
+    color: black;
+    text-align: center;
+    
+}
+
+.tech-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 372px;
+}
+
+.tech-info h3 {
+  opacity: 0.5042;
+  font-family: Bellefair;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tech-info h2 {
+  font-family: Bellefair;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.tech-info p {
+  color: var(--color-blue-300, #d0d6f9);
+  font-family: Barlow;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: center;
+}
+
+

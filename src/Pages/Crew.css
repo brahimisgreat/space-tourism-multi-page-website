@@ -111,8 +111,8 @@
 
   .crew .crew-title .crew-section {
     position: relative;
-    right: 300px;
-    bottom: 110px;
+    right: 18.75rem;
+    bottom: 6.875rem;
   }
 
   .crew .crew-title .crew-section span {
@@ -154,7 +154,7 @@
   .crew{
     flex-direction: row;
     margin: 0;
-    margin-left: 30px;
+    margin-left: 1.875rem;
   }
 
   .img{
