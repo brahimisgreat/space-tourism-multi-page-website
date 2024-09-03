@@ -67,7 +67,7 @@
   line-height: normal;
   border: solid 1px white;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .tech-nav button.active {
