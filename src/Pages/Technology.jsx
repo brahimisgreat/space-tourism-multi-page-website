@@ -6,6 +6,10 @@ import launchVehiclePortrait from "../assets/technology/image-launch-vehicle-por
 import spaceCapsulePortrait from "../assets/technology/image-space-capsule-portrait.jpg";
 import spaceportPortrait from "../assets/technology/image-spaceport-portrait.jpg";
 import "./Technology.css";
+import launchVehicleLandscape from "../assets/technology/image-launch-vehicle-landscape.jpg";
+import bit from "../assets/technology/bitmap.png"
+import spaceportLandscape from "../assets/technology/image-spaceport-landscape.jpg";
+import spaceCapsuleLandscape from "../assets/technology/image-space-capsule-landscape.jpg";
 
 export const Technology = () => {
   const [technology] = useState(data.technology);
@@ -15,6 +19,12 @@ export const Technology = () => {
     spaceportPortrait,
     spaceCapsulePortrait,
   ];
+
+  const imagesLandscape = [launchVehicleLandscape, spaceportLandscape, spaceCapsuleLandscape]
+  const ismobile = window.innerWidth <= 768;
+  console.log(ismobile)
+
+
 
   const handleClick = () => {
     console.log('clicked')
@@ -26,19 +36,16 @@ export const Technology = () => {
     <>
     <div className="technology-bg"></div>
       <div className="technology">
-        <section>
+        <section className="techSection">
           <div className="tech-header">
             <span>03</span>
             <h3>SPACE LAUNCH 101</h3>
           </div>
         </section>
 
-        <section>
-          <img
-            className="tech-img"
-            src={images[index]}
-            alt="image of space aircraft"
-          />
+        <section className="tech-img-section">
+          {ismobile ? <img className="tech-img" src={images[index]} alt="image of space aircraft" /> 
+          : <img className="tech-tablet-desktop" src={imagesLandscape[index]} alt="image of space aircraft" />}
         </section>
 
         <section>
