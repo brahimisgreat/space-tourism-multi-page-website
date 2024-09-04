@@ -188,5 +188,38 @@
     flex-direction: row;
     gap: 0;
     width: 100%;
+    position: relative;
+  }
+
+  .techSection{
+    position: absolute;
+    top: 0;
+  }
+
+  .tech-nav{
+    flex-direction: column;
+  }
+
+  .tech-info h3{
+    text-align: left;
+  }
+
+  .tech-info h2{
+    text-align: left;
+    border: solid 4px red;
+    width: 100%;
+  }
+
+  .tech-info p{
+    text-align: left;
+  }
+
+  .tech-img-section{
+    order: 4;
+  }
+
+  .tech-tablet-desktop{
+    width: 600px;
+    height: 600px;
   }
 }
