@@ -11,7 +11,9 @@ import bit from "../assets/technology/bitmap.png"
 import spaceportLandscape from "../assets/technology/image-spaceport-landscape.jpg";
 import spaceCapsuleLandscape from "../assets/technology/image-space-capsule-landscape.jpg";
 
-export const Technology = () => {
+export const Technology = ({setPath, path}) => {
+  setPath('technology');
+  console.log(path);
   const [technology] = useState(data.technology);
   const [index, setIndex] = useState(0);
   const images = [

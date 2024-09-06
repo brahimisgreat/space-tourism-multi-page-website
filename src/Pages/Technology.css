@@ -1,11 +1,4 @@
-.technology-bg {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: url("../assets//technology/background-technology-mobile.jpg")
-    no-repeat center center/cover;
-  z-index: -4;
-}
+
 
 .technology {
   display: flex;
@@ -25,7 +18,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 2.4px;
+  letter-spacing: 0.15rem;
   opacity: 0.25;
 }
 
@@ -34,36 +27,36 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 2.4px;
+  letter-spacing: 0.15rem;
 }
 
 .tech-img {
   width: 400vw;
-  height: 250px;
+  height: 15.625rem;
 }
 
 .tech-nav {
   display: flex;
-  max-width: 514px;
+  max-width: 32.125rem;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
 .tech-nav button {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 999px;
   background: transparent;
   color: white;
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-family: Bellefair;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border: solid 1px white;
+  border: solid 0.0625rem white;
   position: relative;
   z-index: 1;
 }
@@ -79,13 +72,13 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  width: 372px;
+  width: 23.25rem;
 }
 
 .tech-info h3 {
   opacity: 0.5042;
   font-family: Bellefair;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -93,7 +86,7 @@
 
 .tech-info h2 {
   font-family: Bellefair;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -103,7 +96,7 @@
 .tech-info p {
   color: var(--color-blue-300, #d0d6f9);
   font-family: Barlow;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-style: normal;
   font-weight: 400;
   line-height: 180%;
@@ -112,10 +105,15 @@
 
 /* Tablet******************************************************/
 @media (min-width: 768px) {
+
+  .technology-bg{
+    background: url("../assets//technology/background-technology-tablet.jpg") no-repeat center center/cover  ;
+  }
+
   .technology {
-    width: 688px;
-    height: 800px;
-    margin: 50px auto;
+    width: 43rem;
+    height: 50rem;
+    margin: 3.125rem auto;
     gap: 4rem;
   }
 
@@ -128,52 +126,52 @@
   }
 
   .tech-header span {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 3px;
+    letter-spacing: 0.1875rem;
   }
 
   .tech-header h3 {
-    font-size: 26px;
+    font-size: 1.625rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 3px;
+    letter-spacing: 0.1875rem;
   }
 
   .tech-nav button {
     display: flex;
-    width: 56px;
-    height: 56px;
+    width: 3.5rem;
+    height: 3.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .tech-info{
-    min-width: 512px;
+    min-width: 32rem;
   }
 
   .tech-info h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     width: 100%;
     text-align: center;
   }
 
   .tech-info h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
   }
 
   .tech-info p {
     font-size: 1rem;
-    width: 512px;
+    width: 32rem;
     font-weight: 400;
-    line-height: 180%; /* 28.8px */
+    line-height: 180%; /* 1.8rem */
   }
 
   .tech-img-section {
-    width: 100vw;
+    border: solid 0.25rem red;
   }
 
   .tech-tablet-desktop {
@@ -182,12 +180,16 @@
 }
 
 @media (min-width: 1024px) {
+ .technology-bg{
+  background: url("../assets//technology/background-technology-desktop.jpg") no-repeat center center/cover  ;
+ }
+ 
   .technology {
-    border: solid 4px red;
+    border: solid 0.25rem red;
     display: flex;
     flex-direction: row;
-    gap: 0;
-    width: 100%;
+    gap: 3rem;
+    width: 80%;
     position: relative;
   }
 
@@ -206,7 +208,6 @@
 
   .tech-info h2{
     text-align: left;
-    border: solid 4px red;
     width: 100%;
   }
 
@@ -219,7 +220,7 @@
   }
 
   .tech-tablet-desktop{
-    width: 600px;
-    height: 600px;
+    width: 37.5rem;
+    height: 37.5rem;
   }
 }

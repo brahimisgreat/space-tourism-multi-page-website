@@ -1,15 +1,7 @@
-.crew-bg {
-  background: url("../assets/crew/background-crew-mobile.jpg") no-repeat center
-    center/cover;
-  width: 100vw;
-  height: 105vh;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-}
+
 
 .crew {
-  max-width: 327px;
+  max-width: 20.4375rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -29,7 +21,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 2.4px;
+  letter-spacing: 0.15rem;
   opacity: 0.25;
 }
 
@@ -38,7 +30,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 2.4px;
+  letter-spacing: 0.15rem;
 }
 
 .crew .crew-title .role {
@@ -46,13 +38,13 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   margin-top: 3rem;
 }
 
 .crew .crew-title .role span {
   font-family: Bellefair;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
@@ -61,7 +53,7 @@
 
 .crew .crew-title .role h3 {
   font-family: Bellefair;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: normal;
   text-transform: uppercase;
 }
@@ -69,10 +61,10 @@
 .crew .crew-title .bio {
   color: var(--color-blue-300, #d0d6f9);
   font-family: Barlow;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 180%;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 
 .crew .crew-title nav {
@@ -82,8 +74,8 @@
 }
 
 .crew .crew-title nav button {
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   background-color: white;
   opacity: 0.25;
   border-radius: 50%;
@@ -93,20 +85,19 @@
 }
 
 .img {
-  max-width: 251.27px;
-  height: 320px;
+  max-width: 15.704375rem;
+  height: 20rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .crew {
-    max-width: 1200px;
-    margin-top: 100px;
+    max-width: 75rem;
+    margin-top: 6.25rem;
   }
   .crew .crew-title{
     display: flex;
     flex-direction: column;
-    gap:50px;
-
+    gap: 3.125rem;
   }
 
   .crew .crew-title .crew-section {
@@ -116,41 +107,39 @@
   }
 
   .crew .crew-title .crew-section span {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .crew .crew-title .crew-section h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .crew .crew-title .role span {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .crew .crew-title .role h3 {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
 
   .crew .crew-title .bio {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .img {
-    width: 500px;
+    width: 31.25rem;
   }
 
   .img img {
-    width: 515.304px;
-    height: 598.965px;
+    width: 32.206875rem;
+    height: 37.435313rem;
     position: absolute;
-    right: 200px;
-    top: 830px;
+    right: 12.5rem;
+    top: 51.875rem;
   }
-
-
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .crew{
     flex-direction: row;
     margin: 0;
@@ -158,17 +147,16 @@
   }
 
   .img{
-    max-width: 800px;
-    max-height: 800px;
-    margin-bottom: 100px;
-
+    max-width: 50rem;
+    max-height: 50rem;
+    margin-bottom: 6.25rem;
   }
 
   .img img{
     position: static;
-    max-width: 800px;
-    max-height: 600px;
-    margin-bottom: 200px;
+    max-width: 50rem;
+    max-height: 37.5rem;
+    margin-bottom: 12.5rem;
   }
 
   .crew .crew-title .crew-section{

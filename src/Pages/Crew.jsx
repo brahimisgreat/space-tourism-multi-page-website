@@ -6,7 +6,9 @@ import mark from "../assets/crew/image-mark-shuttleworth.png";
 import victor from "../assets/crew/image-victor-glover.png";
 import anousheh from "../assets/crew/image-anousheh-ansari.png";
 
-export const Crew = () => {
+export const Crew = ({setPath, path}) => {
+  setPath('crew');
+  console.log(path);
   const [index, setIndex] = useState(0);
   const { crew } = data;
 

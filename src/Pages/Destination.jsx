@@ -7,7 +7,10 @@ import { NavLink } from "react-router-dom";
 import "./Destination.css";
 import { useState } from "react";
 
-export const Destination = () => {
+export const Destination = ({setPath, path}) => {
+  setPath('destination');
+
+  console.log(path);
   const [planets] = useState(planetsData.destinations);
   const [PlanetIndex, setPlanetIndex] = useState(0);
 

@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import "./Home.css";
 
-export const Home = () => {
+export const Home = ({setPath, path}) => {
+  setPath('home');
+  console.log(path);
 
 
-  const handleClick = () => {
-  }
+
   return (
     <>
       <section className="home ">
@@ -24,7 +25,7 @@ export const Home = () => {
           </article>
 
           <article className="home-article2">
-            <button className="home-button animate-pulse" onClick={handleClick} >
+            <button className="home-button animate-pulse"  >
                 <Link to='/destination'>EXPLORE</Link>
             </button>
           </article>
