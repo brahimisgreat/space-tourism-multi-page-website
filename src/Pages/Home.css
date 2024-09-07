@@ -4,7 +4,7 @@
   max-width: 20.4375rem;
   margin: 0 auto;
   max-height: 42.25rem;
-  margin-top: 3rem;
+  margin-top: 4.5em;
 }
 
 .home-container .home-article1 .home-h1 {
@@ -109,9 +109,9 @@
   .home-container{
     flex-direction: row;
     display: flex;
-    margin-right: 50rem;
+    margin-right: 65%;
     margin-top: 12.5rem;
-    gap: 6.25rem;
+    gap: 18%;
   }
 
   .home-container .home-article1{
@@ -126,5 +126,10 @@
 
   .home-container .home-article1 .home-p{
     text-align: left;
+  }
+
+  .home-container .home-article2 .home-button{
+    position: relative;
+    bottom: 3rem;
   }
 }

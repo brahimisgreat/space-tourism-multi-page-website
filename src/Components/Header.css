@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  top: 4px;
 }
 
-hr{
+hr {
   display: none;
 }
 
@@ -23,7 +25,7 @@ hr{
   top: 0;
   bottom: 0;
   width: 75%;
-  padding-left: 1.0rem;
+  padding-left: 1rem;
   background: rgba(11, 13, 23, 0.15);
   backdrop-filter: blur(40px);
   height: 100%;
@@ -40,12 +42,10 @@ hr{
   list-style: none;
 }
 
-
-
-.header .open ul li .active{
-width: 100rem;
-border-right: solid 0.5rem #ffff;
-padding-right: 10px;
+.header .open ul li .active {
+  width: 100rem;
+  border-right: solid 0.5rem #ffff;
+  padding-right: 10px;
 }
 
 .header .open ul li a {
@@ -100,31 +100,30 @@ padding-right: 10px;
   margin-left: 10rem;
 }
 
-
-
-
-
 /* TABLET */
-@media (min-width: 768px)  {
+@media (min-width: 768px) {
   .header {
     display: flex;
-    bottom: 8px;
     width: 100vw;
     justify-content: space-evenly;
-
+  
   }
 
-  .logo-container{
-    
+  ul li a span {
+    margin-right: 5px;
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
   }
 
   .header .navbar {
     display: block;
     position: relative;
-    left: 7%;
-    width: 80%;
+    left: 4%;
+    width: 84%;
     display: flex;
-    
   }
 
   .header .menu-container button .menu {
@@ -137,13 +136,14 @@ padding-right: 10px;
 
   .header .navbar ul {
     display: flex;
-    gap: 60px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(40px);
     width: 100%;
+    border-top: 5px solid #0a0909;
+    margin-top:1px;
   }
 
-   .active{
+  .active {
     height: 100%;
     text-align: center;
     display: flex;
@@ -152,12 +152,13 @@ padding-right: 10px;
     border-bottom: 3px solid #ffff;
   }
 
-  
-
-  li{
+  li {
     height: 100px;
     display: flex;
     align-items: center;
+    gap: 1px;
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -169,14 +170,18 @@ padding-right: 10px;
     bottom: 8px;
     width: 100%;
     justify-content: space-evenly;
-   
   }
-  hr{
+
+  .logo-container {
+    position: relative;
+    right: 5rem;
+  }
+  hr {
     display: block;
     position: absolute;
-   width: 400px;
+    width: 31%;
     min-width: 230px;
-    left: 12rem;
+    left: 10%;
     border: 0.5px solid #ffff;
     z-index: 100;
     opacity: 0.25;
@@ -185,24 +190,19 @@ padding-right: 10px;
   .header .navbar {
     width: 62%;
     left: 17%;
+    top: 1px;
   }
 
-  .header .navbar ul{
+  .header .navbar ul {
     justify-content: space-evenly;
+    gap: 1%;
+  }
+
+  li{
+    width: 9rem;
   }
 
   .header .menu-container button .menu {
     display: none;
   }
-
-   
-  
-
-  
-
-  
-
- 
 }
-
-

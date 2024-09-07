@@ -29,12 +29,12 @@ export const Header = () => {
             </button>
             <li>
               <NavLink  to="/">
-                <span></span> HOME
+                 HOME
               </NavLink>
             </li>
             <li>
               <NavLink  to="/destination">
-                <span>01</span> DESTINATION
+                <span className="number">01</span> DESTINATION
               </NavLink>
             </li>
             <li>

@@ -25,14 +25,14 @@ export const Destination = ({setPath, path}) => {
     <div className="bg">
     </div>
 
-      <section className="destination">
+      <section className="dest">
         <header>
           <div className="des-title">
             <span>0{PlanetIndex + 1}</span>
             <h4>PICK YOUR DESTINATION</h4>
           </div>
 
-          <div>
+          <div className="img-container">
             <img className="img w-56 h-56" src={planetImages[PlanetIndex]} alt="moon" />
           </div>
         </header>
