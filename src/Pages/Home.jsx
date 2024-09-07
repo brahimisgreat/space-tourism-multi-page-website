@@ -1,20 +1,18 @@
-import { Link, } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
-export const Home = ({setPath, path}) => {
-  setPath('home');
+export const Home = ({ setPath, path }) => {
+  setPath("home");
   console.log(path);
-
-
 
   return (
     <>
       <section className="home ">
         <div className="home-container ">
-
-          <article className="home-article1  " >
+          <article className="home-article1  ">
             <h1 className="home-h1 ">
-              SO, YOU WANT TO TRAVEL TO <span className=" home-h1-span ">SPACE</span>
+              SO, YOU WANT TO TRAVEL TO{" "}
+              <span className=" home-h1-span ">SPACE</span>
             </h1>
             <p className="home-p">
               Let’s face it; if you want to go to space, you might as well
@@ -25,11 +23,10 @@ export const Home = ({setPath, path}) => {
           </article>
 
           <article className="home-article2">
-            <button className="home-button animate-pulse"  >
-                <Link to='/destination'>EXPLORE</Link>
-            </button>
+            <Link to="/destination">
+              <button className="home-button animate-pulse">EXPLORE</button>
+            </Link>
           </article>
-
         </div>
       </section>
     </>
