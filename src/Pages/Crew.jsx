@@ -33,7 +33,7 @@ export const Crew = ({setPath, path}) => {
             <p>{crew[index].bio}</p>
           </section>
 
-          <nav>
+          <nav className="crew-nav">
             <button onClick={() => setIndex(0)} className={index === 0 ? 'active' : ''}></button>
             <button onClick={() => setIndex(1)} className={index === 1 ? 'active' : ''} ></button>
             <button onClick={() => setIndex(2)} className={index === 2 ? 'active' : ''} ></button>

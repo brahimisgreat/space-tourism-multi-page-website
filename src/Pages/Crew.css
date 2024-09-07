@@ -1,160 +1,217 @@
-
-.crew-page{
-  border: solid red;
+.crew-page {
+  width: 357px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.2rem;
 }
 
-.crew-page .crew-title{
-  border: solid blue;
+.crew-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.crew-page .crew-title .crew-section {
+.crew-section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.crew-page .crew-title .crew-section span {
+.crew-section span {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.15rem;
+  letter-spacing: 2.4px;
   opacity: 0.25;
 }
 
-.crew-page .crew-title .crew-section h4 {
+.crew-section h4 {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.15rem;
+  letter-spacing: 2.4px;
 }
 
-.crew-page .crew-title .role {
+.role {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 0.1rem;
 }
 
-.crew-page .crew-title .role span {
+.role span {
   font-family: Bellefair;
-  font-size: 1.125rem;
+  font-size: 18px;
   font-style: normal;
+  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
   opacity: 0.5;
 }
 
-.crew-page .crew-title .role h3 {
+.role h3 {
+  text-align: center;
+
   font-family: Bellefair;
-  font-size: 1.5rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
 }
 
-.crew-page .crew-title .bio {
+.bio {
+  text-align: center;
+  min-height: 164px;
+}
+
+.bio p {
   color: var(--color-blue-300, #d0d6f9);
   font-family: Barlow;
-  font-size: 0.9375rem;
-  line-height: 180%;
-  text-align: center;
-  border: solid blue;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 27px */
 }
 
-.crew-page .crew-title nav {
+nav {
   display: flex;
+  gap: 2rem;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
-
-.crew-page .crew-title nav button {
-  width: 0.625rem;
-  height: 0.625rem;
-  background-color: white;
-  opacity: 0.25;
-  border-radius: 50%;
-}
-.crew-page .crew-title nav .active {
+.crew-nav .active {
   opacity: 1;
 }
 
-.img {
-  max-width: 15.704375rem;
-  height: 20rem;
+.crew-nav {
+  margin-bottom: 1.2rem;
 }
 
-@media (min-width: 48rem) {
-  .crew {
-    max-width: 75rem;
-    margin-top: 6.25rem;
+.crew-nav button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.17;
+  background-color: white;
+}
+
+.img {
+  margin: 0 auto;
+}
+
+.img img {
+  width: 271.27px;
+  height: 340px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .crew-page {
+    min-width: 80%;
+    gap: 2rem;
   }
-  .crew .crew-title{
+
+  .crew-title {
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .crew-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    margin-bottom: 2rem;
+  }
+
+  .crew-section span {
+    font-family: "Barlow Condensed";
+    font-size: 22px;
+    letter-spacing: 3px;
+    opacity: 0.25;
+  }
+
+  .crew-section h4 {
+    font-family: "Barlow Condensed";
+    line-height: normal;
+    letter-spacing: 3px;
+    font-size: 24px;
+  }
+
+  .role {
     display: flex;
     flex-direction: column;
-    gap: 3.125rem;
+    align-items: center;
+    gap: 1.2rem;
   }
 
-  .crew .crew-title .crew-section {
-    position: relative;
-    right: 18.75rem;
-    bottom: 6.875rem;
+  .role span {
+    font-size: 30px;
   }
 
-  .crew .crew-title .crew-section span {
-    font-size: 1.5rem;
+  .role h3 {
+    font-size: 50px;
   }
 
-  .crew .crew-title .crew-section h4 {
-    font-size: 1.5rem;
+  .bio {
+    text-align: center;
+    width: 512px;
   }
 
-  .crew .crew-title .role span {
-    font-size: 1.5rem;
+  .bio p {
+    font-family: Barlow;
+    font-size: 20px;
   }
 
-  .crew .crew-title .role h3 {
-    font-size: 2.625rem;
+  .crew-nav button {
+    width: 15px;
+    height: 15px;
   }
-
-  .crew .crew-title .bio {
-    font-size: 1.25rem;
-  }
-
-  .img {
-    width: 31.25rem;
-  }
-
   .img img {
-    width: 32.206875rem;
-    height: 37.435313rem;
-    position: absolute;
-    right: 12.5rem;
-    top: 51.875rem;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
   }
 }
 
-@media (min-width: 64rem) {
-  .crew{
+@media (min-width: 1024px) {
+  .crew-page {
     flex-direction: row;
-    margin: 0;
-    margin-left: 1.875rem;
+    margin-top: 0%;
+    gap: 0;
+  }
+
+  .crew-title {
+    align-items: start;
+  }
+
+  .crew-section{
+    margin-bottom: 8%;
+  }
+
+  .role{
+    align-items: start;
+  }
+
+  .bio{
+    align-items: start;
+    text-align: start;
   }
 
   .img{
-    max-width: 50rem;
-    max-height: 50rem;
-    margin-bottom: 6.25rem;
+    align-self: flex-end;
   }
 
-  .img img{
-    position: static;
-    max-width: 50rem;
-    max-height: 37.5rem;
-    margin-bottom: 12.5rem;
-  }
-
-  .crew .crew-title .crew-section{
-    position: static;
-    right: 0;
-    bottom: 0;
-  }
-
-  .crew .crew-title .bio{
-    margin: 0 auto;
+  .crew-nav{
+    margin-top: 10%;
   }
 }
