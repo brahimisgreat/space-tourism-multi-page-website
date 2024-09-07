@@ -1,19 +1,16 @@
 import data from "../data.json";
 import { useState } from "react";
-import bgMobile from "../assets/technology/background-technology-mobile.jpg";
-import bgDesktop from "../assets/technology/background-technology-desktop.jpg";
 import launchVehiclePortrait from "../assets/technology/image-launch-vehicle-portrait.jpg";
 import spaceCapsulePortrait from "../assets/technology/image-space-capsule-portrait.jpg";
 import spaceportPortrait from "../assets/technology/image-spaceport-portrait.jpg";
 import "./Technology.css";
 import launchVehicleLandscape from "../assets/technology/image-launch-vehicle-landscape.jpg";
-import bit from "../assets/technology/bitmap.png";
 import spaceportLandscape from "../assets/technology/image-spaceport-landscape.jpg";
 import spaceCapsuleLandscape from "../assets/technology/image-space-capsule-landscape.jpg";
+import PropTypes from "prop-types";
 
-export const Technology = ({ setPath, path }) => {
+export const Technology = ({ setPath }) => {
   setPath("technology");
-  console.log(path);
   const [technology] = useState(data.technology);
   const [index, setIndex] = useState(0);
   const images = [
@@ -22,18 +19,19 @@ export const Technology = ({ setPath, path }) => {
     spaceCapsulePortrait,
   ];
 
+  Technology.propTypes = {
+    setPath: PropTypes.func.isRequired,
+  };
+
   const imagesLandscape = [
     launchVehicleLandscape,
     spaceportLandscape,
     spaceCapsuleLandscape,
   ];
   const ismobile = window.innerWidth < 768;
-  const isDesktop = window.innerWidth >= 1024;
   console.log(ismobile);
 
-  const handleClick = () => {
-    console.log("clicked");
-  };
+  
 
   console.log(index);
 

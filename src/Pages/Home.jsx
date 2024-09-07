@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+import PropTypes from "prop-types";
 
 export const Home = ({ setPath, path }) => {
   setPath("home");
   console.log(path);
+
+  Home.propTypes = {
+    setPath: PropTypes.func.isRequired,
+    path: PropTypes.string.isRequired,
+  };
 
   return (
     <>
