@@ -1,22 +1,16 @@
 
-
-.crew {
-  max-width: 20.4375rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
-  padding-top: 3rem;
+.crew-page{
+  border: solid red;
 }
 
-.crew .crew-title .crew-section {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
+.crew-page .crew-title{
+  border: solid blue;
 }
 
-.crew .crew-title .crew-section span {
+.crew-page .crew-title .crew-section {
+}
+
+.crew-page .crew-title .crew-section span {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 700;
@@ -25,7 +19,7 @@
   opacity: 0.25;
 }
 
-.crew .crew-title .crew-section h4 {
+.crew-page .crew-title .crew-section h4 {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
@@ -33,16 +27,11 @@
   letter-spacing: 0.15rem;
 }
 
-.crew .crew-title .role {
-  display: flex;
-  flex-direction: column;
+.crew-page .crew-title .role {
   align-items: center;
-  gap: 0.5rem;
-  padding-bottom: 1.25rem;
-  margin-top: 3rem;
 }
 
-.crew .crew-title .role span {
+.crew-page .crew-title .role span {
   font-family: Bellefair;
   font-size: 1.125rem;
   font-style: normal;
@@ -51,36 +40,36 @@
   opacity: 0.5;
 }
 
-.crew .crew-title .role h3 {
+.crew-page .crew-title .role h3 {
   font-family: Bellefair;
   font-size: 1.5rem;
   line-height: normal;
   text-transform: uppercase;
 }
 
-.crew .crew-title .bio {
+.crew-page .crew-title .bio {
   color: var(--color-blue-300, #d0d6f9);
   font-family: Barlow;
   font-size: 0.9375rem;
   line-height: 180%;
   text-align: center;
-  padding-bottom: 3.125rem;
+  border: solid blue;
 }
 
-.crew .crew-title nav {
+.crew-page .crew-title nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.crew .crew-title nav button {
+.crew-page .crew-title nav button {
   width: 0.625rem;
   height: 0.625rem;
   background-color: white;
   opacity: 0.25;
   border-radius: 50%;
 }
-.crew .crew-title nav .active {
+.crew-page .crew-title nav .active {
   opacity: 1;
 }
 

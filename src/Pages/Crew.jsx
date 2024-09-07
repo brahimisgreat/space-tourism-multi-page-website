@@ -17,8 +17,7 @@ export const Crew = ({setPath, path}) => {
   console.log(crew);
   return (
     <>
-      <div className="crew-bg"></div>
-      <article className="crew">
+      <article className="crew-page">
         <div className="crew-title ">
           <section className="crew-section">
             <span>02</span>
